@@ -1,22 +1,16 @@
 
-$(document).ready(function() {
-
-	function printHTML(text){
-		let printHTML = document.getElementById('text');
-		printHTML.innerHTML += text;
-	}
-
-
-	$('#buttonOne').click(function(){
-        $('.text2').remove();
-			printHTML("<h1 class='text1'>I'm right! </h1>" );
-		})
-
-	$('#buttonTwo').click(function(){
-        $('.text1').remove();
-			printHTML("<h1 class='text2'> No, I'm right!! </h1>");
-    })
-})
+document
+  .getElementsByTagName('button')[0]
+  .addEventListener('click', function (event) {
+    document.getElementsByClassName('row')[1].innerHTML =
+      " <p>I'm right!</p><p>*C'mon click me*</p>";
+  });
+document
+  .getElementsByTagName('button')[1]
+  .addEventListener('click', function (event) {
+    document.getElementsByClassName('row')[1].innerHTML =
+      " <p>*C'mon click me*</p><p>No, I'm right!</p>";
+  });
 
 const calculateVolume = () => {
   console.log("Button clicked!")
