@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BonusPage</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="container">
+      <br />
+      <br />
+      <a href="index.html">Home</a>
+      <h2>Volume of a Sphere:</h2>
+      <h3>
+         To get the volume of the
+        sphere
+      </h3>
+      <div>
+        <form>
+          <label for="radius">Please input radius of sphere: </label>
+          <input type="text" name="radius" id="radius" />
+          <input
+            type="submit"
+            value="Submit"
+            onclick="return calculateVolume();"
+          />
+        </form>
+        <h3 id="volumeLabel">Volume:</h3>
+      </div>
+    </div>
+
+    <!-- Script File -->
+    <script src="scripts.js"></script>
+  </body>
+</html>
